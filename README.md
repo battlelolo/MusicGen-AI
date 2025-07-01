@@ -1,3 +1,4 @@
-MusicGen Prompt Tester:
-A simple prompt testing tool for MusicGen.
-Use this to experiment with prompt variations, organize styles by genre, and generate consistent audio samples.
+Techno sample: 
+https://youtu.be/QKSCFgryusk
+Citypop sample: 
+https://youtu.be/D_0FO-TtNBo
