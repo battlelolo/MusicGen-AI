@@ -10,18 +10,20 @@ def custom_audio_write_wav(path: str, wav: torch.Tensor, sample_rate: int):
 
 # 지직거림 줄인 테크노 프롬프트들
 prompts = [
-    "warm dub techno with soft reverb, mellow chords, and steady groove",
-    "atmospheric Berlin-style techno with clean percussion and lush textures",
-    "melodic warehouse techno with spacious pads and punchy but clean kick",
-    "hypnotic techno with filtered synth stabs, subtle delays, and no distortion",
-    "modular ambient techno, warm tape textures, and deep rhythmic patterns",
-    "spacious deep techno with dreamy layers and clean production, 124 BPM",
-    "classic Detroit techno with crisp drums, mellow chords, and analog vibe"
+    # "warm dub techno with soft reverb, mellow chords, and steady groove",
+    # "atmospheric Berlin-style techno with clean percussion and lush textures",
+    # "melodic warehouse techno with spacious pads and punchy but clean kick",
+    # "hypnotic techno with filtered synth stabs, subtle delays, and no distortion",
+    # "modular ambient techno, warm tape textures, and deep rhythmic patterns",
+    # "spacious deep techno with dreamy layers and clean production, 124 BPM",
+    # "classic Detroit techno with crisp drums, mellow chords, and analog vibe"
+    "city pop instrumental, slow tempo, smooth groove, sunset driving vibe",
+    "city pop with funky guitar chops, analog synth leads, and warm reverb"
 ]
 
 # 모델 로드 및 설정
 model = MusicGen.get_pretrained("medium")
-model.set_generation_params(duration=30)
+model.set_generation_params(duration=60)
 
 for prompt in prompts:
     print(f"🎵 생성 중: {prompt}")

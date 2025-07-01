@@ -18,8 +18,8 @@ def custom_audio_write_wav(path: str, wav: torch.Tensor, sample_rate: int):
 
 # ========== 설정 ==========
 
-duration_sec = 30
-prompt = ["deep minimal techno with smooth basslines and clean analog synths, 126 BPM"]
+duration_sec = 60
+prompt = ["city pop with retro synths, groovy bassline, 80s drum machine, smooth vocals"]
 prompt_for_filename = sanitize_filename(prompt[0])[:50]  # 길이 제한 (옵션)
 
 filename_suffix = f"techno_{duration_sec}s_{prompt_for_filename}"
